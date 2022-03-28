@@ -1,7 +1,7 @@
 version: 1.1.0
 # 你的头像url
-avatar: /img/avatar.jpg
-favicon: /img/avatar.jpg
+avatar: https://yionr.oss-cn-hangzhou.aliyuncs.com/images/20200708220248.png
+favicon: https://yionr.oss-cn-hangzhou.aliyuncs.com/images/20200708220248.png
 
 #如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
 # 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
@@ -12,42 +12,35 @@ link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
+    github: https://github.com/yionr
+    facebook:
     twitter:
     linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
-    csdn:
-    oschina: https://my.oschina.net/yelog
+    instagram:
+    reddit:
+    weibo:
+    jianshu:
+    zhihu:
+    csdn: https://blog.csdn.net/weixin_42318691
+    oschina:
     juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    email: yionr99@gmail.com
+    qq: 14757609801
+    kugou:
+    neteasemusic: https://music.163.com/#/user/home?id=307273254
 
 ##########多作者模式############
 author:
   on: false
   authors:
-    author1: 阁主
-    author2: 小马哥
+    author1:
+    author2:
 ##############################
 
 # 文章分类设置
 category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
-  sort:
-    - 读书
-    - 工具
-    - 大前端
-    - 后端
-    - 数据库
-    - 运维
   width:
     lg: 120 # 1468px<屏幕宽度 左侧分类宽度
     md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
@@ -68,39 +61,43 @@ menu:
     url: /about  # 跳转链接
     type: 1 # 跳转类型 1：站内异步跳转 2：当前页面跳转 3：打开新的tab页
   friend: # '友链' 按钮
-    on: true # 是否展示
+    on: false # 是否展示
   menus: # 添加的其他菜单写在 menus 下，如下三个菜单：动态菜单1、动态菜单2、动态菜单3
     相册:
       on: false
       url: /photo
       type: 1  # 跳转类型 1：站内异步跳转
-    叶落阁:
+    风享站:
       on: false
-      url: http://yelog.org/
+      url: http://yionr.cn/
       type: 2  # 跳转类型 2：当前页面跳转
     github:
       on: false
-      url: https://github.com/yelog
+      url: https://github.com/yionr
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 yionr99@gmail.com
 
-bottom_text: ©2016-2020 Yelog
+bottom_text: ©2022 Yionr
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
 # 底部备案号
 miit:
-  on: false
-  info: 京ICP证030173号
+  on: true
+  info: 浙ICP备19047112号-2
   url: http://beian.miit.gov.cn/ # 默认链接为 http://beian.miit.gov.cn/
+# 公安备案
+gaba:
+  on: true
+  info: 浙公网安备 33102202000473号
+  url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33102202000473
 
-
-reward: true
+reward: false
 # true 开启打赏功能
 
-searchAll: false
+searchAll: true
 # true 启用全文搜索
 # 开启此功能需要下面操作：
 # 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
@@ -141,12 +138,12 @@ article_list:
 
 # 文章列表背景图
 article_bg_img:
-  on: false # 是否开启
-  src: https://i.loli.net/2019/07/22/5d3521411f3f169375.png
+  on: true # 是否开启
+  src: https://yionr.oss-cn-hangzhou.aliyuncs.com/images/20200708220438.png
   opacity: 0.3 # 背景图透明度，范围 0 ～ 1
 
 # 列表样式
-list: normal
+list: thread
 # normal : 普通样式
 # thread : 列表外圈有一个线框
 
@@ -224,13 +221,16 @@ mermaid:
 
 # 友情链接
 friends:
-  叶落阁: http://yelog.org/
+
 
 ##########评论设置#############
 comment:
-  on: false
+  on: true
   type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
   comment_count: true  # 文章标题下方显示评论数 目前仅支持 gitalk 和 disqus
+  preload_comment: true  # 预加载评论区
+  ## false: 当点击评论条等区域时再加载评论模块
+  ## true: 页面加载时加载评论区
   ## 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
 # 各评论系统配置 ↓↓
 
@@ -241,12 +241,12 @@ disqus:
 
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
-  ClientID:
-  ClientSecret:
-  adminUser: yelog
-  distractionFreeMode: true
+  githubID: yionr
+  repo: gitalk
+  ClientID: 1dc4e56444d493bf4cb4
+  ClientSecret: 79694e9f4f7f7308cae7b93a63982ca72361bfae
+  adminUser: yionr
+  distractionFreeMode: false
   language: zh-CN
   perPage: 10
 # gitalk：利用github issue制作的第三方聊天插件

@@ -464,6 +464,14 @@ function syncOutline(_this) {
 }
 
 $(function () {
+    //如果是 PC 端,则直接移除 mobile class,解决首次进入主页时无法收起侧栏的问题
+    if (window.document.documentElement.ontouchstart === undefined) {
+        if ($(".nav").hasClass("mobile")) {
+            $(".nav").removeClass("mobile");
+            $fullBtn.children().removeClass("mobile");
+        }
+    }
+
     bind();
     $('[data-title]').quberTip({
         speed: 200

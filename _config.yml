@@ -226,9 +226,9 @@ friends:
 ##########评论设置#############
 comment:
   on: true
-  type: disqus  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
-  preload_comment: true
+  type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
   comment_count: true
+  preload_comment: true
 
 # 各评论系统配置 ↓↓
 

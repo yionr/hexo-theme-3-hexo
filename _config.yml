@@ -227,6 +227,9 @@ friends:
 comment:
   on: true
   type: disqus  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
+  preload_comment: true
+  comment_count: true
+
 # 各评论系统配置 ↓↓
 
 disqus:

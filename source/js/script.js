@@ -53,6 +53,12 @@ $(document).on({
         NProgress.done();
         container.scrollTop(0);
         afterPjax();
+        $('#default-panel').hide()
+        $('#title-list-nav').hide()
+        $('#search-panel').hide()
+        $('#outline-panel').show()
+        $outlineList.show()
+        syncOutline(container[0])
 
         /*移动端打开文章后，自动隐藏文章列表*/
         if ($(window).width() <= 1024) {

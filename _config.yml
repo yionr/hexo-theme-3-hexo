@@ -285,12 +285,12 @@ utteranc:
 
 ##########CND设置#############
 CDN:
-  jquery: //cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
-  jquery_cookie: //cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js
-  highlight: //cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js
-  pjax: //cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js
-  animate: //cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css
-  nprogres_js: //cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js
+  jquery: //cdn.yionr.cn/jquery.min.js
+  jquery_cookie: //cdn.yionr.cn/jquery.cookie.min.js
+  highlight: //cdn.yionr.cn/highlight.pack.min.js
+  pjax: //cdn.yionr.cn/jquery.pjax.min.js
+  animate: //cdn.yionr.cn/animate.min.css
+  nprogres_js: //cdn.yionr.cn/nprogress.min.js
   mathjax: //cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML
   photoswipe_js: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js
   photoswipe_ui_js: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js

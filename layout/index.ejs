@@ -63,8 +63,16 @@
     .then(result => {
       // This is the visitor identifier:
       const visitorId = result.visitorId
-      console.log(visitorId)
+      console.log(`fingerprint recorded: ${visitorId}`)
     })
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAAA9w-as4NSgDPvl" data-callback="handleValidationSuccess"></div>
+<script>
+    function handleValidationSuccess(e) {
+        console.log(`cloudflare turnstile validation success : ${e}`)
+    }
 </script>
 </body>
 <%- partial('_partial/footer') %>

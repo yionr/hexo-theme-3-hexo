@@ -1,6 +1,7 @@
 ## 在听的歌 🎧
 
-[![Spotify](https://novatorem-yionr.vercel.app/api/spotify)](https://open.spotify.com/user/31su7yqfmlsk6uwt6hsj2lkw3sru)
+<iframe src="https://d485c848.homelab-40n.pages.dev/spotify" frameborder="0" width="300" height="150"></iframe>
+
 
 ## 本站统计
 
